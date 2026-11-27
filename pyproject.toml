@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zoha"
+version = "0.1.0"
+description = "Open-source voice assistant for Windows. Bring your own model, extend it with plugins."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Zhessor" }]
+keywords = ["voice-assistant", "ollama", "gemini", "windows", "local-llm", "plugins"]
+classifiers = [
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: Microsoft :: Windows",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+# Keep in step with requirements.txt
+dependencies = [
+  "faster-whisper>=1.1.0",
+  "onnxruntime>=1.17",
+  "sounddevice>=0.5.0",
+  "numpy>=1.24",
+  "kokoro-onnx>=0.4.7",
+  "edge-tts>=7.0.0",
+  "google-genai>=1.20.0",
+  "openai>=1.40.0",
+  "psutil>=5.9",
+  "python-dotenv>=1.0",
+  "PySide6>=6.6",
+  "playwright>=1.49",
+]
+
+[project.optional-dependencies]
+gpu = ["nvidia-cublas-cu12", "nvidia-cudnn-cu12>=9,<10"]
+dev = ["pytest>=8"]
+
+[project.urls]
+Homepage = "https://zhessor.com"
+Source = "https://github.com/zhessor/zoha"
+Issues = "https://github.com/zhessor/zoha/issues"
+
+# Zoha reads skills/, templates/, plugins/ and assets/ next to the code, so use an editable install:
+#   pip install -e .
+[tool.setuptools]
+packages = ["zoha", "zoha.ui"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

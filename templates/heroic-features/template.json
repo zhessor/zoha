@@ -1,0 +1,10 @@
+{
+ "id": "heroic-features",
+ "name": "Heroic Features",
+ "source": "Start Bootstrap (startbootstrap.com)",
+ "license": "MIT",
+ "credit": "Template: Start Bootstrap, MIT licence (LICENSE.txt)",
+ "good_for": "features, product, services overview, institute",
+ "description": "Big jumbotron, grid of icon feature cards, footer.",
+ "framework": "Bootstrap 5"
+}

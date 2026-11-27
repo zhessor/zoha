@@ -1,0 +1,10 @@
+{
+ "id": "small-business",
+ "name": "Small Business",
+ "source": "Start Bootstrap (startbootstrap.com)",
+ "license": "MIT",
+ "credit": "Template: Start Bootstrap, MIT licence (LICENSE.txt)",
+ "good_for": "small business, local services, shop, repair, home services",
+ "description": "Hero with image and text, call-out band, 3 cards, footer.",
+ "framework": "Bootstrap 5"
+}

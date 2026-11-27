@@ -1,0 +1,10 @@
+{
+ "id": "landing-page",
+ "name": "Landing Page",
+ "source": "Start Bootstrap (startbootstrap.com)",
+ "license": "MIT",
+ "credit": "Template: Start Bootstrap, MIT licence (LICENSE.txt)",
+ "good_for": "product landing, service landing, signup, course, event, offer",
+ "description": "Photo hero with signup, 3 icon features, alternating showcase rows, testimonials, call to action.",
+ "framework": "Bootstrap 5"
+}

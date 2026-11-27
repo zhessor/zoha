@@ -1,0 +1,10 @@
+{
+ "id": "personal",
+ "name": "Personal",
+ "source": "Start Bootstrap (startbootstrap.com)",
+ "license": "MIT",
+ "credit": "Template: Start Bootstrap, MIT licence (LICENSE.txt)",
+ "good_for": "personal brand, consultant, coach, speaker, chartered accountant",
+ "description": "Personal hero, services, projects, resume-style experience, contact.",
+ "framework": "Bootstrap 5"
+}

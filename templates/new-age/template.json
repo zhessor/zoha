@@ -1,0 +1,10 @@
+{
+ "id": "new-age",
+ "name": "New Age",
+ "source": "Start Bootstrap (startbootstrap.com)",
+ "license": "MIT",
+ "credit": "Template: Start Bootstrap, MIT licence (LICENSE.txt)",
+ "good_for": "mobile app, startup, SaaS, product launch, delivery app",
+ "description": "App hero with phone mockup, feature grid, quote band, download call to action.",
+ "framework": "Bootstrap 5"
+}

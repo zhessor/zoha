@@ -1,0 +1,16 @@
+site_name: Zoha
+site_description: A voice-first personal assistant that builds checked web pages and always asks before acting.
+repo_url: https://github.com/zhessor/zoha
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: teal
+nav:
+  - Home: index.md
+  - Install: install.md
+  - Choosing a brain: brain.md
+  - Skills: skills.md
+  - Plugins: plugins.md
+  - Website plugin API: site-agent-api.md
+  - FAQ: faq.md

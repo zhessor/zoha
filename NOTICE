@@ -1,0 +1,10 @@
+Zoha — open-source desktop voice assistant
+Copyright 2026 Zhessor
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This project includes third-party material under its own licenses:
+- templates/*: Start Bootstrap templates, MIT License (each folder has its LICENSE.txt).
+- three.js (loaded from a CDN by generated pages): MIT License.
+- Qwen3.5 base models (used through Ollama, not bundled): Apache License 2.0.
+- Fonts in assets/fonts: see the license file next to each font.

@@ -1,0 +1,10 @@
+{
+ "id": "resume",
+ "name": "Resume",
+ "source": "Start Bootstrap (startbootstrap.com)",
+ "license": "MIT",
+ "credit": "Template: Start Bootstrap, MIT licence (LICENSE.txt)",
+ "good_for": "resume, CV, personal profile, doctor profile, lawyer profile",
+ "description": "Fixed sidebar navigation with photo, sections for about, experience, education, skills, interests, awards.",
+ "framework": "Bootstrap 5"
+}

@@ -1,0 +1,10 @@
+{
+ "id": "stylish-portfolio",
+ "name": "Stylish Portfolio",
+ "source": "Start Bootstrap (startbootstrap.com)",
+ "license": "MIT",
+ "credit": "Template: Start Bootstrap, MIT licence (LICENSE.txt)",
+ "good_for": "portfolio, hospitality, travel, resort, events, venue",
+ "description": "Full-bleed photo hero, side menu, services on colour band, image grid with captions, map.",
+ "framework": "Bootstrap 5"
+}

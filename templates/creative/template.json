@@ -1,0 +1,10 @@
+{
+ "id": "creative",
+ "name": "Creative",
+ "source": "Start Bootstrap (startbootstrap.com)",
+ "license": "MIT",
+ "credit": "Template: Start Bootstrap, MIT licence (LICENSE.txt)",
+ "good_for": "creative studio, photography, events, wedding, design, decor, salon",
+ "description": "Full-screen photo hero, about band, services icons, edge-to-edge photo gallery, call to action, contact.",
+ "framework": "Bootstrap 5"
+}

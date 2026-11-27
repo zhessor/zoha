@@ -1,0 +1,10 @@
+{
+ "id": "agency",
+ "name": "Agency",
+ "source": "Start Bootstrap (startbootstrap.com)",
+ "license": "MIT",
+ "credit": "Template: Start Bootstrap, MIT licence (LICENSE.txt)",
+ "good_for": "agency, studio, consultancy, services company, marketing, contractor",
+ "description": "Dark hero over a photo, services with icons, portfolio grid with pop-ups, about timeline, team, client logos, contact form.",
+ "framework": "Bootstrap 5"
+}

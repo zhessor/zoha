@@ -1,0 +1,5 @@
+Make the web page {name}. Request: {what}
+
+Write ONE self-contained, lively, mobile-first HTML file to a senior agency's standard: Google Fonts pairing and a colour palette that fit this kind of business; a tinted hero with colourful shapes and a rating badge; a stats strip; 3–4 offerings with icon chips and ₹ price chips; an About/story section; a reviews band with stars; a bright closing call-to-action band; a contact section with address, phone and a labelled form with an inline thank-you message; a floating WhatsApp button; a working nav (links on desktop, hamburger on phones); title, meta description, Open Graph tags and a LocalBusiness JSON-LD block; Indian details (₹, +91, Mumbai areas) and © {year}. No stock photos, no alert(), no placeholder text.
+
+Output ONLY the complete file – no explanation, no markdown fences.

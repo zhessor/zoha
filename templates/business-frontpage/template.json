@@ -1,0 +1,10 @@
+{
+ "id": "business-frontpage",
+ "name": "Business Frontpage",
+ "source": "Start Bootstrap (startbootstrap.com)",
+ "license": "MIT",
+ "credit": "Template: Start Bootstrap, MIT licence (LICENSE.txt)",
+ "good_for": "small business homepage, services company, agency, clinic",
+ "description": "Dark header with call to action, feature icons, testimonial, blog preview, footer.",
+ "framework": "Bootstrap 5"
+}

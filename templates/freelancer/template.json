@@ -1,0 +1,10 @@
+{
+ "id": "freelancer",
+ "name": "Freelancer",
+ "source": "Start Bootstrap (startbootstrap.com)",
+ "license": "MIT",
+ "credit": "Template: Start Bootstrap, MIT licence (LICENSE.txt)",
+ "good_for": "freelancer, portfolio, personal brand, artist, tutor",
+ "description": "Bold coloured hero with avatar, portfolio grid with pop-ups, about columns, contact form.",
+ "framework": "Bootstrap 5"
+}

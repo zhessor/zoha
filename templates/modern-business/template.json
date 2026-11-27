@@ -1,0 +1,10 @@
+{
+ "id": "modern-business",
+ "name": "Modern Business",
+ "source": "Start Bootstrap (startbootstrap.com)",
+ "license": "MIT",
+ "credit": "Template: Start Bootstrap, MIT licence (LICENSE.txt)",
+ "good_for": "corporate, company, consulting, IT services, school, institute",
+ "description": "Big header with image, feature grid, testimonial, blog/news cards, footer with columns.",
+ "framework": "Bootstrap 5"
+}

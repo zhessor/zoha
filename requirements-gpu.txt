@@ -1,0 +1,4 @@
+# Optional: run speech recognition on the NVIDIA GPU (RTX 5060 etc.)
+# CTranslate2 needs CUDA 12 cuBLAS + cuDNN 9; these wheels ship the DLLs, Zoha finds them automatically.
+nvidia-cublas-cu12
+nvidia-cudnn-cu12>=9,<10

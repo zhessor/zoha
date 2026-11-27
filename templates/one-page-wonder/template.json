@@ -1,0 +1,10 @@
+{
+ "id": "one-page-wonder",
+ "name": "One Page Wonder",
+ "source": "Start Bootstrap (startbootstrap.com)",
+ "license": "MIT",
+ "credit": "Template: Start Bootstrap, MIT licence (LICENSE.txt)",
+ "good_for": "simple one page, product story, brand story, launch",
+ "description": "Gradient masthead with shapes, three alternating image/text story rows, footer.",
+ "framework": "Bootstrap 5"
+}

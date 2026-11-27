@@ -1,0 +1,10 @@
+{
+ "id": "shop-homepage",
+ "name": "Shop Homepage",
+ "source": "Start Bootstrap (startbootstrap.com)",
+ "license": "MIT",
+ "credit": "Template: Start Bootstrap, MIT licence (LICENSE.txt)",
+ "good_for": "online shop, product catalogue, e-commerce, store",
+ "description": "Header banner, product cards grid with prices, ratings and sale badges, footer.",
+ "framework": "Bootstrap 5"
+}

@@ -1,0 +1,10 @@
+{
+ "id": "grayscale",
+ "name": "Grayscale",
+ "source": "Start Bootstrap (startbootstrap.com)",
+ "license": "MIT",
+ "credit": "Template: Start Bootstrap, MIT licence (LICENSE.txt)",
+ "good_for": "dark modern, startup, tech, product, bar, lounge, studio",
+ "description": "Dark full-screen hero, about with image, alternating project rows, signup band, contact cards.",
+ "framework": "Bootstrap 5"
+}

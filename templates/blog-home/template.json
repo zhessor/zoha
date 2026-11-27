@@ -1,0 +1,10 @@
+{
+ "id": "blog-home",
+ "name": "Blog Home",
+ "source": "Start Bootstrap (startbootstrap.com)",
+ "license": "MIT",
+ "credit": "Template: Start Bootstrap, MIT licence (LICENSE.txt)",
+ "good_for": "blog, news, magazine, articles",
+ "description": "Featured post, post grid, sidebar with search, categories and widget.",
+ "framework": "Bootstrap 5"
+}
