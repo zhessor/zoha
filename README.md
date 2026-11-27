@@ -21,7 +21,7 @@ Made by [Zhessor](https://zhessor.com). Licensed under Apache-2.0.
 
 ---
 
-<p align="center"><a href="docs/demo/zoha-demo.mp4"><img src="docs/images/demo-poster.jpg" alt="Watch the 30-second Zoha demo" width="80%"></a><br><sub>30-second illustrative demo (click to play). Source: <code>docs/demo/make_video.py</code></sub></p>
+<p align="center"><img src="docs/images/demo.gif" alt="Zoha demo: a voice command, an ask-before-shutdown confirmation and a checked web page" width="80%"><br><sub>30-second illustrative demo. <a href="https://raw.githubusercontent.com/zhessor/zoha/main/docs/demo/zoha-demo.mp4">Download the MP4</a>. Source: <code>docs/demo/make_video.py</code></sub></p>
 
 ## Quick start (Windows 10/11, Python 3.12+)
 

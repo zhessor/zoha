@@ -4,7 +4,7 @@ Zoha is a personal assistant you talk to. She opens apps, finds files, answers q
 
 ![How Zoha works](images/how-it-works.svg)
 
-[Watch the 30-second demo](demo/zoha-demo.mp4)
+![Zoha demo](images/demo.gif)
 
 ## What makes her different
 
