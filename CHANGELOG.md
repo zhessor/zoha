@@ -11,6 +11,7 @@ First public release.
 - Bring your own brain: Gemini, any OpenAI-compatible API, or any local Ollama model.
 - Plugins folder and an optional website/CMS plugin.
 - Skills are plain Markdown files with a name/description header; `python -m zoha.skill_install install <url>` adds one.
-- 76 automated tests and GitHub Actions CI (Windows and Ubuntu).
+- Publish a page online with a yes (`site_publish`, Netlify), learnable routines, a business desk plugin (quotations, unpaid invoices, follow-up drafts) and an embeddable chat widget server.
+- 92+ automated tests and GitHub Actions CI (Windows and Ubuntu).
 - 30-second demo video (`docs/demo/`) and a docs site (MkDocs, published by GitHub Actions).
 - Apache-2.0 licence.

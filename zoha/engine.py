@@ -652,6 +652,19 @@ class ZohaEngine:
                     return await self._say_simple(await asyncio.to_thread(SITE.cancel_pending), text)
                 await asyncio.to_thread(SITE.cancel_pending, False)
                 log.info("Website change cancelled: the user moved on without saying yes")
+            # 0a2) generic ask-first gate (publishing a site, ...): only a clear yes runs it; anything else cancels it
+            from . import confirm as CONFIRM
+
+            if CONFIRM.pending():
+                if CONFIRM.is_yes(text):
+                    self.emit("tool_start", name="confirmed_action", label="Doing it", icon="✅", args={})
+                    res = await asyncio.to_thread(CONFIRM.apply)
+                    self.emit("tool_end", name="confirmed_action", result=res, ok=not res.startswith("Error"))
+                    return await self._say_simple(_spoken(res.replace("Error: ", "")), text)
+                if CONFIRM.is_no(text):
+                    CONFIRM.cancel()
+                    return await self._say_simple("Okay, I won't.", text)
+                CONFIRM.cancel()
             # 0b) answering "should I shut down the PC?" – yes executes, anything else cancels the question
             pending = T.pending_power()
             if pending:

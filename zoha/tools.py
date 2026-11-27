@@ -88,6 +88,7 @@ class ToolContext:
 
 
 CTX = ToolContext()
+RECORDER: Optional[Callable[[str, Dict[str, Any], str], None]] = None   # set by routines.py while recording
 
 
 def call_tool(name: str, args: Dict[str, Any]) -> str:
@@ -97,7 +98,13 @@ def call_tool(name: str, args: Dict[str, Any]) -> str:
     try:
         clean = {k: v for k, v in (args or {}).items() if k in t.parameters.get("properties", {})}
         res = t.fn(**clean)
-        return str(res) if res is not None else "Done."
+        out = str(res) if res is not None else "Done."
+        if RECORDER:
+            try:
+                RECORDER(name, clean, out)
+            except Exception:  # noqa: BLE001 - recording must never break a tool
+                log.exception("routine recorder failed")
+        return out
     except TypeError as e:
         return f"Error: bad arguments for {name}: {e}"
     except Exception as e:
@@ -2065,6 +2072,9 @@ except Exception:
     pass
 if os.getenv("SITE_API_URL") and os.getenv("SITE_API_KEY"):
     from . import site_plugin  # noqa: E402,F401
+
+# Built-in extras: publish a page online, and learnable routines
+from . import live_site, routines  # noqa: E402,F401
 
 # Community plugins: every plugins/*.py next to main.py can add tools with @tool (see plugins/README.md)
 from . import plugins as _plugins  # noqa: E402

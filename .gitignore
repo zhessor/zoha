@@ -16,3 +16,6 @@ _to_delete/
 legacy/
 *.gguf
 .pytest_cache/
+
+# Local business data and widget config
+widget_config.json

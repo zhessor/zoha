@@ -59,7 +59,7 @@ def system_prompt(settings, memory, modality: str, awareness: str = "", dynamic:
 How you work:
 - You can act on the computer through tools. When the user asks you to DO something (open, play, close, search, remind, type, check, find, remember), call the right tool — don't describe what you would do. Chain tools if needed (e.g. find_files then open_path).
 - After a tool runs, confirm in a few words ("Done — Spotify's open."). Never read raw tool output verbatim; summarise it. Don't repeat details you already said earlier, and don't tack on "Need anything else?".
-- If the website plugin is set up, the site_* tools read and change the user's own website/CMS (content, enquiries, analytics, change history); propose changes with site_propose and reply to enquiries with site_enquiry_reply – the user always confirms with a yes, you never apply or send anything yourself. Making, redesigning or improving a website/landing page for a business (gym, café, salon…) is FILE work: write_file for a new page, improve_file for the page you just made (no filename needed) – NEVER site_* tools.
+- If the website plugin is set up, the site_* tools read and change the user's own website/CMS (content, enquiries, analytics, change history); propose changes with site_propose and reply to enquiries with site_enquiry_reply – the user always confirms with a yes, you never apply or send anything yourself. Making, redesigning or improving a website/landing page for a business (gym, café, salon…) is FILE work: write_file for a new page, improve_file for the page you just made (no filename needed) – NEVER site_* tools. When the user asks for a website but gives no details, ask ONE short question at a time (business name, city, what they sell, colours) before write_file; after building, tell them they can say 'change the heading' to edit it or 'publish it' to put it online (site_publish only asks; they confirm with a yes).
 - In your browser, the user only sees what's under "On screen right now" – never say you can see a section unless it is listed there.
 - If a tool returns an Error, say briefly what went wrong and offer the next best thing.
 - NEVER say you saved, deleted, opened, set, changed or "noted" anything unless you called the matching tool in this turn and it succeeded. If the user corrects something you said, apologise briefly and fix it — use remember/forget only if it concerns stored facts.
@@ -764,6 +764,9 @@ KEYWORD_TOOLS = [
     (r"\b(write|code|notepad|file|letter|document|essay|html|css|javascript|python|script|page|draft|save|proposal|quotation|caption|blog|article|reel script|landing)\b", {"write_file", "improve_file"}),
     (r"\b(improve|better|polish|fix|redo|update|bolder|change|redesign|revamp)\b.*\b(page|file|code|site|website|landing|letter|html|design|layout)\b"
      r"|\b(page|site|website|design|layout)\b.*\b(basic|plain|boring|ugly|improve|better|polish|redo|redesign|revamp)\b", {"improve_file"}),
+    (r"\b(publish|put (?:it|the (?:site|page|website)) (?:online|live)|go live|make it live|deploy)\b", {"site_publish"}),
+    (r"\b(routine|macro|work mode|learn this|record this|remember these steps|teach you)\b", {"routine_record", "routine_save", "routine_run", "routine_list", "routine_forget"}),
+    (r"\b(quot(?:e|ation)|invoice|unpaid|owes?|follow ?up|payment due|bill)\b", {"make_quotation", "add_invoice", "list_unpaid", "mark_paid", "draft_followup"}),
     (r"\b(news|headlines)\b", {"news_headlines"}),
     (r"\b(notes?)\b", {"read_notes"}),
     (r"\b(timers?|reminders?|alarms?)\b", {"list_timers", "cancel_timer"}),

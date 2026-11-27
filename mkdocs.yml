@@ -9,6 +9,7 @@ theme:
 nav:
   - Home: index.md
   - Install: install.md
+  - Features: features.md
   - Choosing a brain: brain.md
   - Skills: skills.md
   - Plugins: plugins.md

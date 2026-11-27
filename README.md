@@ -81,6 +81,9 @@ Zoha can manage your own website (content, enquiries, email replies, analytics, 
 a small Agent API. Every change is read out and needs your **yes**. The spec is in
 [`docs/site-agent-api.md`](docs/site-agent-api.md). It's off unless `SITE_API_URL` and `SITE_API_KEY` are set.
 
+### More things she does
+Publish a page online, learn routines, make quotations, and power a chat widget on a client's site. See [docs/features.md](docs/features.md).
+
 ### Skills
 `skills/*.md` are the briefs Zoha follows for web pages, code, emails, proposals, social posts and blogs. Add one from a link: `python -m zoha.skill_install install <url>`.
 Edit them to change her style.
